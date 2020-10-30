@@ -2,7 +2,7 @@
 
 const http = require("http");
 const { handleGetRequest } = require("./middleware");
-
+const {requestSupported} = require("./router");
 
 //#endregion requires
 
@@ -32,21 +32,21 @@ const server = http.createServer(function(request,response){
     //     response.end("<h1>Hello World</h1>");
     // }
 
-    if(request.method === "GET"){
-        handleGetRequest(request, response);
+    if(requestSupported(response, request.method)){
+        if(request.method === "GET"){
+            handleGetRequest(request, response);
+        }
+        else if(request.method === "POST"){
+            
+        }
+        else if(request.method === "DELETE"){
+            
+        }
+        else if(request.method === "UPDATE"){
+            
+        }
     }
-    else if(request.method === "POST"){
-        
-    }
-    else if(request.method === "DELETE"){
-        
-    }
-    else if(request.method === "UPDATE"){
-        
-    }
-    else{
-        handleErrorRequest(response, statusCode, message);
-    }
+    
 })
 
 server.listen(3000, function(){

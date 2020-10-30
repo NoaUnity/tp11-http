@@ -28,6 +28,8 @@
 // Product.prototype.getProduct = getProduct;
 // Product.prototype.saveProduct = saveProduct;
 
+// module.exports = new Product();
+
 
 // =============== NOUVEAU JAVASCRIPT ============================
 
@@ -45,7 +47,7 @@ class Product {
     saveProduct(){}
     updateProduct(){}
     deleteProduct(){}
-    
+
 
 
 }
