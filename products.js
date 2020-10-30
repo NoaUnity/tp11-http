@@ -1,5 +1,18 @@
+//#region requires
 
-// ================ ANCIEN JAVASCRIPT ==========================
+//#endregion requires
+
+//#region variables
+
+//#endregion variables
+
+//#region functions
+
+//#endregion functions
+
+//#region MAIN
+
+//#region OldJS
 
 // const products = [
 //     {id: 1, name: "name Products", quantity: 6, img: "https://monImage", date:"31/10/2020", ship: false, categorie: "fruit&legume", price: 10}
@@ -30,8 +43,9 @@
 
 // module.exports = new Product();
 
+//#endregion OldJS
 
-// =============== NOUVEAU JAVASCRIPT ============================
+//#region NewJS
 
 class Product {
     constructor(){
@@ -47,9 +61,12 @@ class Product {
     saveProduct(){}
     updateProduct(){}
     deleteProduct(){}
-
-
-
 }
 
 module.exports = new Product();
+
+//#endregion NewJS
+
+//#endregion MAIN
+
+

@@ -1,8 +1,21 @@
+//#region requires
+
+const { handleErrorRequest } = require("./middleError");
+
+//#endregion requires
+
+//#region variables
+
 const requestSupportedMethod = ["GET", "POST", "DELETE", "UPDATE"];
 const routerPathGet = ["/products"];
 
+//#endregion variables
 
-const { handleErrorRequest } = require("./middleError");
+//#region functions
+
+//#endregion functions
+
+//#region MAIN
 
 //#region oldJS
 
@@ -45,3 +58,13 @@ class Router {
 //#endregion newJS
 
 module.exports = new Router();
+
+//#endregion MAIN
+
+
+
+
+
+
+
+

@@ -1,5 +1,15 @@
+//#region requires
+
 const product = require("./products");
 const { isExistGetPath } = require("./router");
+
+//#endregion requires
+
+//#region variables
+
+//#endregion variables
+
+//#region functions
 
 function Middleware(){
 
@@ -28,9 +38,22 @@ function handleUpdateRequest(req, res){
 
 }
 
+//#endregion functions
+
+//#region MAIN
+
 Middleware.prototype.handleGetRequest = handleGetRequest;
 Middleware.prototype.handlePostRequest = handlePostRequest;
 Middleware.prototype.handleDeleteRequest = handleDeleteRequest;
 Middleware.prototype.handleUpdateRequest = handleUpdateRequest;
 
 module.exports = new Middleware();
+
+//#endregion MAIN
+
+
+
+
+
+
+
